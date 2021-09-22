@@ -590,6 +590,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
 }
 
 .blue-circle p {
@@ -598,7 +599,7 @@ section{
 
 .if-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -606,8 +607,14 @@ section{
     font-size: 12px;
     line-height: 135%;
     color: #1D1D1D;
-    opacity: 0.5;
+    opacity: 0.7;
     
+}
+
+.text-name-sername {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .if-text p:last-child {
