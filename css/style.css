@@ -53,6 +53,7 @@ section{
 
 .button-client {
     background: rgba(46, 74, 223, 1);
+    border: none;
     color: white;
     padding: 15px 39px;
     margin: 27px 0 70px 0;
@@ -505,7 +506,7 @@ section{
 }
 
 .questions {
-    background-color: black;
+    background-color: #1d1d1d;;
     padding: 105px 20px;
 }
 
@@ -541,8 +542,9 @@ section{
 }
 
 .input-question {
-    background-color: #F5F5F5;
-    opacity: 0.1;
+    background: #F5F5F5;
+    opacity: 0.05;
+    border: none;
     width: 308px;
     height: 55px;
     margin-bottom: 18px;
@@ -783,11 +785,13 @@ section{
 }
 
 .input-project {
-    background-color: #F5F5F5;
-    opacity: 0.1;
+    background: #F5F5F5;
+    opacity: 0.05;
+    border: none;
     width: 348px;
     height: 120px;
     margin-bottom: 18px;
+    padding-bottom: 70px;
 }
 
 .input-project::placeholder {
@@ -797,6 +801,7 @@ section{
 .width348 {
     width: 348px;
     box-sizing: border-box;
+    padding-left: 20px;
 }
 
 .download {
@@ -890,3 +895,14 @@ section{
 .photo-director img {
     margin-bottom: 20px;
 }
+
+
+
+/* .input-question::-moz-placeholder {
+    color: #F5F5F5;
+    opacity: 50%;
+} */
+
+input[type="text"]::-webkit-input-placeholder {
+    color: black;
+   }
