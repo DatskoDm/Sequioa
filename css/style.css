@@ -312,6 +312,7 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 600px;
 }
 
 .achievements-block {
@@ -406,8 +407,12 @@ section{
 .tariffs-img {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 25px;
+    /* justify-content: space-between; */
+}
+
+.tariffs-img img:first-child {
+    margin-right: 25px;
 }
 
 .tariffs-context {
@@ -506,7 +511,7 @@ section{
 }
 
 .questions {
-    background-color: #1d1d1d;;
+    background-color: rgba(21, 21, 21, 1);
     padding: 105px 20px;
 }
 
@@ -542,17 +547,10 @@ section{
 }
 
 .input-question {
-    background: #F5F5F5;
-    opacity: 0.05;
+    background-color: rgba(245, 245, 245, 0.05);
     border: none;
-    width: 308px;
     height: 55px;
     margin-bottom: 18px;
-}
-
-.input-question:placeholder {
-    color: white;
-    opacity: 0.5;
 }
 
 .politic {
@@ -785,8 +783,7 @@ section{
 }
 
 .input-project {
-    background: #F5F5F5;
-    opacity: 0.05;
+    background-color: rgba(245, 245, 245, 0.05);
     border: none;
     width: 348px;
     height: 120px;
@@ -903,6 +900,16 @@ section{
     opacity: 50%;
 } */
 
-input[type="text"]::-webkit-input-placeholder {
-    color: black;
-   }
+/* input[type="text"]::-webkit-input-placeholder {
+    color: rgba(247, 247, 247, 0.5);
+   } */
+
+.h3-arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h3-arrow img {
+    height: 9px;
+}
