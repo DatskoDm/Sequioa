@@ -191,6 +191,9 @@ section{
 }
 
 .first-scroll-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: rgba(46, 74, 223, 1);
     color: white;
     padding: 20px;
@@ -555,6 +558,7 @@ section{
 
 .politic {
     text-decoration: underline;
+    color: white;
 }
 
 .reviews {
@@ -851,12 +855,20 @@ section{
     margin: 45px 70px 30px 15px;
 }
 
-.contact-text p {
+.contact-text a {
     font-size: 16px;
     line-height: 100%;
     text-transform: lowercase;
     margin-top: 6px;
     margin-bottom: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .icon {
@@ -919,4 +931,15 @@ section{
 
 .h3-arrow img {
     height: 9px;
+}
+
+.scroll-box .first-scroll-box:nth-child(2) {
+    background-color: #9E00FF;
+}
+
+.scroll-box .first-scroll-box:nth-child(3) {
+    background-color: #01978C;
+}
+.scroll-box .first-scroll-box:nth-child(4) {
+    background-color: #EDA335;
 }
