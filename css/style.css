@@ -557,8 +557,12 @@ section{
 }
 
 .politic {
-    text-decoration: underline;
-    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F7F7F7;
+    opacity: 0.5;
 }
 
 .reviews {
