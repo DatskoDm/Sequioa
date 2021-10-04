@@ -95,7 +95,7 @@ section {
 }
 @media screen and (min-width: 1366px) {
   section {
-    padding: 0 70px;
+    padding: 80px 70px 80px 71px;
     max-width: 1920px;
   }
 }
@@ -203,7 +203,11 @@ section {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 120px;
+    margin-top: 40px;
+    background-image: url("/img/Group28427267.png");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    padding-bottom: 660px;
   }
 }
 
@@ -272,6 +276,50 @@ section {
   }
 }
 
+.services-tariffs {
+  display: none;
+}
+@media screen and (min-width: 1366px) {
+  .services-tariffs {
+    display: block;
+    width: 26%;
+  }
+  .services-tariffs p {
+    font-weight: 600;
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .we-offer {
+    width: 74%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .we-offer-context {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .services-context {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .services {
   border-top-style: solid;
   border-top-width: 2px;
@@ -283,6 +331,15 @@ section {
   font-size: 22px;
   line-height: 25px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1366px) {
+  .header-services {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
 }
 
 .services-play {
@@ -298,6 +355,21 @@ section {
           align-items: center;
   margin-top: 30px;
   margin-bottom: 36px;
+}
+@media screen and (min-width: 1366px) {
+  .services-play {
+    min-width: 285px;
+    margin: 0 35px 0 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .services-text-block {
+    width: 420px;
+  }
 }
 
 .services-play-img {
@@ -342,6 +414,23 @@ section {
   max-width: 75%;
   margin: 0px;
 }
+@media screen and (min-width: 1366px) {
+  .services-text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+}
+
+.arrow-right-left {
+  display: none;
+}
+@media screen and (min-width: 1366px) {
+  .arrow-right-left {
+    display: block;
+    margin: 35px 0 30px 0;
+  }
+}
 
 .details {
   display: -webkit-box;
@@ -367,6 +456,7 @@ section {
   line-height: 16px;
   font-weight: 500;
   color: black;
+  text-decoration: underline;
 }
 
 .project {
@@ -381,6 +471,21 @@ section {
   line-height: 25px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1366px) {
+  .header-project {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    margin: 30px 0 70px 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .project-text-block {
+    margin-left: 258px;
+    width: 35%;
+  }
+}
 
 .project-text {
   font-family: sans-serif;
@@ -388,6 +493,13 @@ section {
   line-height: 18.9px;
   letter-spacing: -0.2px;
   margin: 0px;
+}
+@media screen and (min-width: 1366px) {
+  .project-text {
+    font-size: 16px;
+    line-height: 21.6px;
+    letter-spacing: -0.02em;
+  }
 }
 
 .all-project {
@@ -414,6 +526,7 @@ section {
   line-height: 16px;
   font-weight: 500;
   color: black;
+  text-decoration: underline;
 }
 
 .scroll-box {
@@ -448,6 +561,18 @@ section {
   margin-right: 35px;
   min-width: 285px;
 }
+@media screen and (min-width: 1366px) {
+  .first-scroll-box {
+    height: 175px;
+    background-position: 90% 20%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .first-scroll-box:hover {
+    height: 550px;
+  }
+}
 
 .scroll-box-context {
   margin-bottom: 100px;
@@ -457,8 +582,17 @@ section {
   font-size: 18px;
   line-height: 20.3px;
   font-weight: 700;
+  margin-top: 21px;
   margin-bottom: 35px;
   max-width: 60%;
+}
+@media screen and (min-width: 1366px) {
+  .scroll-box-context h3 {
+    margin-top: 71px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .scroll-box-text {
@@ -466,7 +600,6 @@ section {
   line-height: 21.7px;
   font-weight: 500;
 }
-
 .number-scroll-box {
   margin-top: 0px;
 }
@@ -482,9 +615,66 @@ section {
   text-decoration: none;
 }
 
+.years {
+  display: none;
+}
+@media screen and (min-width: 1366px) {
+  .years {
+    display: block;
+    width: 25.7%;
+  }
+  .years p {
+    margin-top: 35px;
+    font-weight: 600;
+  }
+}
+
 .all-project-list {
   overflow: hidden;
   margin-bottom: 20px;
+}
+.all-project-list .all-project {
+  display: none;
+}
+@media screen and (min-width: 1366px) {
+  .all-project-list {
+    width: 25.7%;
+  }
+  .all-project-list .all-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .project-first-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .project-second-block {
+    width: 74.3%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .project-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .ul-all-project {
@@ -501,15 +691,102 @@ section {
   overflow-x: auto;
   overflow-y: hidden;
 }
+@media screen and (min-width: 1366px) {
+  .ul-all-project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .ul-all-project li {
   margin: 0 25px 0 0;
+}
+@media screen and (min-width: 1366px) {
+  .ul-all-project li {
+    margin-bottom: 15px;
+    opacity: 0.5;
+    font-weight: 500;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .ul-all-project li:hover {
+    color: #2E4ADF;
+    opacity: 1;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .ul-all-project li:hover::before {
+    position: absolute;
+    content: url(/img/blue-arrow-right.png);
+    margin-left: -15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .product-block {
+    width: 74.3%;
+  }
 }
 
 .product {
   border-top-style: solid;
   border-top-width: 1px;
   border-top-color: rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1366px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.product-img1 {
+  background-image: url(/img/Rectangle4.png);
+  background-repeat: no-repeat;
+  padding-top: 235px;
+  background-position-y: 35px;
+}
+
+.product-img2 {
+  background-image: url(/img/Rectangle4.png);
+  background-repeat: no-repeat;
+  padding-top: 235px;
+  background-position-y: 35px;
+}
+
+.product-img3 {
+  background-image: url(/img/Rectangle4.png);
+  background-repeat: no-repeat;
+  padding-top: 235px;
+  background-position-y: 35px;
+}
+
+.product-img4 {
+  background-image: url(/img/Rectangle4.png);
+  background-repeat: no-repeat;
+  padding-top: 235px;
+  background-position-y: 35px;
+}
+
+.product-img5 {
+  background-image: url(/img/Rectangle4.png);
+  background-repeat: no-repeat;
+  padding-top: 235px;
+  background-position-y: 35px;
 }
 
 .img-product {
@@ -1324,6 +1601,11 @@ section {
 
 .h3-arrow img {
   height: 9px;
+}
+@media screen and (min-width: 1366px) {
+  .h3-arrow img {
+    display: none;
+  }
 }
 
 .scroll-box .first-scroll-box:nth-child(2) {
