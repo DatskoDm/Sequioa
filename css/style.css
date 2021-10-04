@@ -76,6 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   width: auto;
   font-family: Inter;
+  font-size: 14px;
 }
 
 section {
@@ -91,6 +92,12 @@ section {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+@media screen and (min-width: 1366px) {
+  section {
+    padding: 0 70px;
+    max-width: 1920px;
+  }
 }
 
 .header {
@@ -174,16 +181,58 @@ section {
 }
 
 .menu p {
-  
+  margin-right: 10px;
+  line-height: 0.75;
+}
+
+.introduce {
+  background-image: url("/img/Group28427267(1).png");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding-bottom: 200px;
+}
+@media screen and (min-width: 1366px) {
+  .introduce {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 120px;
+  }
 }
 
 .paragrah-introduce {
   margin-top: 100px;
 }
+@media screen and (min-width: 1366px) {
+  .paragrah-introduce {
+    width: 14.2%;
+    margin-top: 0;
+  }
+}
 
 .paragrah-introduce p {
   margin-right: 136px;
   font-size: 12px;
+}
+@media screen and (min-width: 1366px) {
+  .paragrah-introduce p {
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 18.9px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .header-introduce {
+    width: 49.5%;
+  }
 }
 
 .header-introduce h1 {
@@ -191,6 +240,14 @@ section {
   font-size: 27px;
   font-weight: bold;
   margin-top: 13px;
+}
+@media screen and (min-width: 1366px) {
+  .header-introduce h1 {
+    font-size: 40px;
+    line-height: 46px;
+    width: 85%;
+    margin-top: 0;
+  }
 }
 
 .button-client {
@@ -204,6 +261,15 @@ section {
 .introduce-img {
   max-height: 200px;
   margin-bottom: 60px;
+}
+
+.logo_showreel {
+  display: none;
+}
+@media screen and (min-width: 1366px) {
+  .logo_showreel {
+    display: block;
+  }
 }
 
 .services {
@@ -1270,10 +1336,4 @@ section {
 
 .scroll-box .first-scroll-box:nth-child(4) {
   background-color: #EDA335;
-}
-
-@media screen and (min-width: 1366px) {
-  section {
-    padding: 0 70px;
-  }
 }
