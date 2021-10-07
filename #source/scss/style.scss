@@ -73,7 +73,7 @@ section{
 }
 
 .introduce {
-    background-image: url("/img/Group28427267\(1\).png");
+    background-image: url("../img/Group284272671.png");
     background-repeat: no-repeat;
     background-position: 0 100%;
     padding-bottom: 200px;
@@ -83,7 +83,7 @@ section{
         flex-direction: row;
         justify-content: space-between;
         margin-top: 40px;
-        background-image: url("/img/Group28427267.png");
+        background-image: url("../img/Group28427267.png");
         background-repeat: no-repeat;
         background-position: 0 100%;
         padding-bottom: 660px;
@@ -517,56 +517,56 @@ section{
 }
 
 .product-img1{
-    background-image: url(/img/Rectangle4.png);
+    background-image: url(../img/Rectangle4.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
     @media screen and (min-width: $desktop-width) {
-        background-image: url(/img/Rectangle_desktop1.png);
+        background-image: url(../img/Rectangle_desktop1.png);
         background-position-x: 100%;
     }
 }
 
 .product-img2{
-    background-image: url(/img/Rectangle4-4.png);
+    background-image: url(../img/Rectangle4-4.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
     @media screen and (min-width: $desktop-width) {
-        background-image: url(/img/Rectangle_desktop2.png);
+        background-image: url(../img/Rectangle_desktop2.png);
         background-position-x: 100%;
     }
 }
 
 .product-img3{
-    background-image: url(/img/Rectangle41.png);
+    background-image: url(../img/Rectangle41.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
     @media screen and (min-width: $desktop-width) {
-        background-image: url(/img/Rectangle_desktop3.png);
+        background-image: url(../img/Rectangle_desktop3.png);
         background-position-x: 100%;
     }
 }
 
 .product-img4{
-    background-image: url(/img/Rectangle42.png);
+    background-image: url(../img/Rectangle42.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
     @media screen and (min-width: $desktop-width) {
-        background-image: url(/img/Rectangle_desktop4.png);
+        background-image: url(../img/Rectangle_desktop4.png);
         background-position-x: 100%;
     }
 }
 
 .product-img5{
-    background-image: url(/img/Rectangle43.png);
+    background-image: url(../img/Rectangle43.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
     @media screen and (min-width: $desktop-width) {
-        background-image: url(/img/Rectangle_desktop5.png);
+        background-image: url(../img/Rectangle_desktop5.png);
         background-position-x: 100%;
     }
 }
@@ -643,7 +643,7 @@ section{
     @media screen and (min-width: $desktop-width) {
         background-color: $color_4;
         color: $color_1;
-        background-image: url(/img/black-arrow-down.png);
+        background-image: url(../img/black-arrow-down.png);
         background-repeat: no-repeat;
         width: 100%;
         background-position: 563px;
@@ -1250,7 +1250,7 @@ section{
     @media screen and (min-width: $desktop-width) {
         display: flex;
         flex-direction: row;
-        background-image: url(/img/iphoneX.png);
+        background-image: url(../img/iphoneX.png);
         background-repeat: no-repeat;
         background-position: 0 176px;
     }
@@ -1701,6 +1701,7 @@ section{
 .width490 {
     width: 490px;
     height: 55px;
+    padding-left: 21px;
 }
 
 .text-white {
@@ -1749,6 +1750,7 @@ section{
         width: 490px;
         height: 154px;
         margin-bottom: 30px;
+        padding-bottom: 100px;
     }
 }
 
