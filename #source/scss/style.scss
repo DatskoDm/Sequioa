@@ -207,7 +207,7 @@ section{
     margin-bottom: 36px;
     @media screen and (min-width: $desktop-width)  {
         min-width: 285px;
-        margin:0 35px 0 0 ;
+        margin:0 30px 0 0 ;
         align-items: flex-start;
     }
 }
@@ -309,7 +309,7 @@ section{
 
 .project-text-block {
     @media screen and (min-width: $desktop-width) {
-        margin-left: 258px;
+        margin-left: 315px;
         width: 35%;
     }
 }
@@ -480,7 +480,7 @@ section{
     overflow-y: hidden;
     @media screen and (min-width: $desktop-width) { 
         display: flex;
-        flex-direction: column;     
+        flex-direction: column;   
     }
 }
 
@@ -516,21 +516,15 @@ section{
     }
 }
 
-.product {
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: rgba(0, 0, 0, 0.2);
-    @media screen and (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 .product-img1{
     background-image: url(/img/Rectangle4.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
+    @media screen and (min-width: $desktop-width) {
+        background-image: url(/img/Rectangle_desktop1.png);
+        background-position-x: 100%;
+    }
 }
 
 .product-img2{
@@ -538,34 +532,84 @@ section{
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
+    @media screen and (min-width: $desktop-width) {
+        background-image: url(/img/Rectangle_desktop2.png);
+        background-position-x: 100%;
+    }
 }
 
 .product-img3{
-    background-image: url(/img/Rectangle4\(1\).png);
+    background-image: url(/img/Rectangle41.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
+    @media screen and (min-width: $desktop-width) {
+        background-image: url(/img/Rectangle_desktop3.png);
+        background-position-x: 100%;
+    }
 }
 
 .product-img4{
-    background-image: url(/img/Rectangle4\(2\).png);
+    background-image: url(/img/Rectangle42.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
+    @media screen and (min-width: $desktop-width) {
+        background-image: url(/img/Rectangle_desktop4.png);
+        background-position-x: 100%;
+    }
 }
 
 .product-img5{
-    background-image: url(/img/Rectangle4\(3\).png);
+    background-image: url(/img/Rectangle43.png);
     background-repeat: no-repeat;
     padding-top: 235px;
     background-position-y: 35px;
+    @media screen and (min-width: $desktop-width) {
+        background-image: url(/img/Rectangle_desktop5.png);
+        background-position-x: 100%;
+    }
 }
 
-
-
-.img-product {
-    margin: 35px 0 20px 0;
+.product-context {
+    @media screen and (min-width: $desktop-width) {
+        width: 22.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
 }
+
+.product {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0;
+        height: 387px;
+    }
+}
+
+.watch-project{
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        a {
+            color: $color_1;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        img {
+            height: 9px;
+            margin: 3.5px 0 0 10px;
+        }
+    }
+}
+
 
 .product h3 {
     font-family: sans-serif;
@@ -582,6 +626,13 @@ section{
     color: rgba(29, 29, 29, 1);
     opacity: 50%;
     margin-bottom: 35px;
+    @media screen and (min-width: $desktop-width) {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.6px;
+        letter-spacing: -0.02em;
+    }
 }
 
 .button-download {
@@ -589,6 +640,22 @@ section{
     color: rgba(245, 245, 245, 1) ;
     width: 348px;
     height: 70px;
+    @media screen and (min-width: $desktop-width) {
+        background-color: $color_4;
+        color: $color_1;
+        background-image: url(/img/black-arrow-down.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: 563px;
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-color: rgba(29, 29, 29, 0.3);
+        img {
+            display: none;
+        }
+    }
 }
 
 .button-download p {
@@ -598,18 +665,62 @@ section{
 .achievements {
     border-top-style: solid;
     border-top-width: 1px;
+    padding-top: 20px;
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.row{
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.achievements-main-block {
+    @media screen and (min-width: $desktop-width) {
+        width: 74.3%;
+    }
+}
+
+.indicators {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: block;
+        width: 25.7%;
+        p {
+            margin-top: 35px;
+            font-weight: 600;
+        }
+    }
 }
 
 .achievements h2 {
     font-weight: bold;
     font-size: 22px;
     font-family: sans-serif;
+    @media screen and (min-width: $desktop-width) {
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 700;
+        margin: 30px 0 70px 0;
+    }
 }
 
 .achievements-description {
     font-size: 14px;
     line-height: 19px;
     margin: 20px 0 15px 0;
+    @media screen and (min-width: $desktop-width) {
+        margin-left: 315px;
+        width: 35%;
+        font-size: 16px;
+        line-height: 21.6px;
+        letter-spacing: -0.02em;    
+        margin-bottom: 100px;
+    }
 }
 
 .achievements4 {
@@ -617,12 +728,20 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 600px;
+    @media screen and (min-width: $desktop-width)  {
+        flex-wrap: nowrap;
+        max-width: 100%;
+    }
 }
 
 .achievements-block {
     max-width: 44%;
     margin: 30px 20px 30px 0;
     box-sizing: border-box;
+    @media screen and (min-width: $desktop-width) {
+        margin: 50px 0px 30px 20px;
+        width: 190px;
+    }
 }
 
 .achievements-block h3 {
@@ -631,12 +750,22 @@ section{
     font-weight: bold;
     font-family: sans-serif;
     margin: 0 0 9px 0;
+    @media screen and (min-width: $desktop-width) {
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 700;
+    }
 }
 
 .achievements-block p {
     font-size: 12px;
     line-height: 15px;
     opacity: 70%;
+    @media screen and (min-width: $desktop-width) {
+        font-size: 14px;
+        line-height: 17.5px;
+        font-weight: 400;
+    }
 }
 
 .achievements-imgs {
@@ -645,10 +774,47 @@ section{
     flex-direction: row;
 }
 
+.achievements-imgs-mobile {
+    display: flex;
+    flex-direction: row;
+    @media screen and (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.achievements-imgs-desktop {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .achievements-img-block {
     width: 136.26px;
     height: 74px;
     position: relative;
+    @media screen and (min-width: $desktop-width) {
+        margin-right: 35px;
+        opacity: 0.5;
+        width: 175px;
+        height: 95px;
+    }
+}
+
+.block-line {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: inline;
+    }
+}
+
+.line1 {
+    position: absolute;
+}
+
+.line2 {
+    margin-right: 210px;    
 }
 
 .achievements-img-block img {
@@ -663,6 +829,45 @@ section{
 .tariffs {
     border-top-style: solid;
     border-top-width: 1px;
+    padding-top: 20px;
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.width-257 {
+    p {display: none;}
+    @media screen and (min-width: $desktop-width) {
+        width: 25.7%;
+        p {
+            display: block;
+            font-size: 14px;
+            line-height: 16.1px;
+            font-weight: 600;
+            margin: 15px 0 125px 0;
+        }
+        .all-project-list {
+            width: 100%;
+        }
+        h2 {display: none;}
+    }
+}
+
+.width-743 {
+    @media screen and (min-width: $desktop-width) {
+        width: 74.3%;
+    }
+}
+
+.width-743 h2 {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: block;
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 700;
+    }
 }
 
 .tariffs h2 {
@@ -670,6 +875,13 @@ section{
     font-weight: bold;
     font-size: 22px;
     font-family: sans-serif;
+    margin-bottom: 60px;
+    @media screen and (min-width: $desktop-width) {
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 700;
+        margin-bottom: 100px;
+    }
 }
 
 .ul-all-project li:hover{
@@ -683,29 +895,62 @@ section{
     padding: 40px 0 5px 0;
 }
 
-.complex-service h3 {
+.complex-service-header h3 {
     font-weight: bold;
     font-size: 20px;
     font-family: sans-serif;
     color: rgba(46, 74, 223, 1);
     text-transform: uppercase;
     max-width: 60%;
+    @media screen and (min-width: $desktop-width) {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 22px;
+        display: block;
+        width: 280px;
+        height: 291px;
+        background-color: $color_3;
+        color: $color_4;
+        max-width: 100%;
+        text-transform: none;
+        padding: 25px 60px 0 25px;
+    }
 }
 
 .complex-service-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (min-width: $desktop-width) {
+        width: 315px;
+    }
 }
 
 .complex-service-header img {
     height: 17px;
     margin-top: 25px;
+    @media screen and (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.complex-service-main {
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .tariffs-context p{
     font-size: 13.5px;
     line-height: 19px;
+    @media screen and (min-width: $desktop-width) {
+        width: 385px;
+        margin-bottom: 65px;
+        font-size: 16px;
+        line-height: 135%;
+        letter-spacing: -0.02em;
+    }
 }
 
 .tariffs-img {
@@ -719,8 +964,30 @@ section{
     margin-right: 25px;
 }
 
+.audio-text {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: block;
+        width: 91px;
+        height: 32px;
+    }
+}
+
+.audio-text p {
+    width: 91px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 135%;
+    opacity: 0.5;
+    margin: 8px 0 0 30px;
+}
+
 .tariffs-context {
     margin-bottom: 65px;
+    @media screen and (min-width: $desktop-width) {
+        width: 65%;
+        margin-bottom: 0;
+    }
 }
 
 .money {
@@ -728,13 +995,41 @@ section{
     border-top-width: 1px;
     border-top-color: rgba(0, 0, 0, 0.2);
     padding-top: 21px;
+    @media screen and (min-width: $desktop-width) {
+        border-top: none;
+    }
 }
 
 .money h3 {
     font-size: 14px;
     line-height: 16.8px;
     font-weight: 600;
-    max-width: 50%;
+    max-width: 15%;
+    margin-bottom: 25px;
+    @media screen and (min-width: $desktop-width) {
+        width: 182px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 112.8%;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+}
+
+.money form {
+    @media screen and (min-width: $desktop-width) {
+        width: 280px;
+        margin-right: 35px;
+        height: 150px;
+    }
+}
+
+.money button {
+    @media screen and (min-width: $desktop-width) {
+        height: 150px;
+        flex-direction: column;
+        padding: 15px;
+    }
 }
 
 .basic {
@@ -754,6 +1049,10 @@ section{
     font-size: 16px;
     line-height: 17.6px;
     font-weight: 700;
+    margin-top: 16px;
+    @media screen and (min-width: $desktop-width) {
+        margin: 0;
+    }
 }
 
 .price-button {
@@ -762,6 +1061,9 @@ section{
     line-height: 20.7px;
     font-weight: 700;
     margin: auto 10px auto 0px;
+    @media screen and (min-width: $desktop-width) {
+        margin: 0;
+    }
 }
 
 .mounth{
@@ -812,11 +1114,42 @@ section{
     background-repeat: no-repeat;
     padding-top: 113px;
     padding-bottom: 112px;
+    background-size: 100%;
+    @media screen and (min-width: $desktop-width) {
+        padding: 235px 70px 234px 71px;
+    }
 }
 
 .questions {
     background-color: rgba(21, 21, 21, 1);
     padding: 105px 20px;
+    @media screen and (min-width: $desktop-width) {
+        padding: 80px 70px;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(21, 21, 21, 0.8);
+        backdrop-filter: blur(5px);
+        border-radius: 5px; 
+    }
+}
+
+.question-write {
+    @media screen and (min-width: $desktop-width) {
+        width: 56%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        img {
+            height: 29px;
+            width: 157px;
+        }
+    }
+}
+
+.question-send {
+    @media screen and (min-width: $desktop-width) {
+        width: 44%;
+    }
 }
 
 .questions h2 {
@@ -826,6 +1159,13 @@ section{
     text-transform: uppercase;
     color: #898989;
     margin: 15px 0 40px 0;
+    @media screen and (min-width: $desktop-width) {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 110%;
+        margin: 0;
+        width: 60%;
+    }
 }
 
 .questions h2 span{
@@ -839,6 +1179,30 @@ section{
     line-height: 16px;
     opacity: 50%;
     margin: 0;
+    @media screen and (min-width: $desktop-width) {
+        width: 185px;
+        height: 48px;
+        font-family: Plain;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 10px 0 0 35px;
+        color: #F7F7F7;
+        }
+}
+
+.question-text-last {
+    width: 180px;
+    height: 48px;
+    font-family: Plain;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 10px 0 0 30px;
+    color: #F7F7F7;
+    opacity: 0.5;
 }
 
 .button-question {
@@ -848,6 +1212,9 @@ section{
     color: #1D1D1D;
     margin-top: 10px;
     margin-bottom: 15px;
+    @media screen and (min-width: $desktop-width) {
+        width: 270px;
+    }
 }
 
 .input-question {
@@ -857,6 +1224,13 @@ section{
     margin-bottom: 18px;
 }
 
+.send-application {
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .politic {
     display: flex;
     align-items: center;
@@ -864,11 +1238,42 @@ section{
     line-height: 15px;
     color: #F7F7F7;
     opacity: 0.5;
+    text-decoration: underline;
+    @media screen and (min-width: $desktop-width) {
+        opacity: 1;
+    }
 }
 
 .reviews {
     border-top-style: solid;
     border-top-width: 1px;
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        background-image: url(/img/iphoneX.png);
+        background-repeat: no-repeat;
+        background-position: 0 176px;
+    }
+}
+
+.reviews-small {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: block;
+        width: 25.7%;
+        p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 115%;
+            margin-top: 35px;
+        }
+    }
+}
+
+.reviews-main-block {
+    @media screen and (min-width: $desktop-width) {
+        width: 74.3%;
+    }
 }
 
 .reviews h2 {
@@ -878,17 +1283,38 @@ section{
     text-transform: uppercase;
     color: #1D1D1D;
     margin: 20px 0 70px 0;
+    @media screen and (min-width: $desktop-width) {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 115%;
+        margin: 30px 0 81px 0;
+    }
+}
+
+.reviews-content {
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 105px 0 315px;
+    }
 }
 
 .IF {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (min-width: $desktop-width) {
+        justify-content: normal;
+        margin-top: 100px;
+    }
 }
 
 .IF img {
     height: 17px;
     margin-top: 27px;
+    @media screen and (min-width: $desktop-width) {
+        margin-left: 44px;
+    }
 }
 
 .blue-circle {
@@ -944,6 +1370,21 @@ section{
     letter-spacing: -0.02em;
     color: #1D1D1D;
     margin: 30px 0 27px 0;
+    @media screen and (min-width: $desktop-width) {
+        width: 490px;
+        font-size: 16px;
+        line-height: 135%;
+        letter-spacing: -0.02em;
+        margin-top: 40px;
+    }
+}
+
+.thanks {
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 126px;
+    }
 }
 
 .thanks p {
@@ -952,6 +1393,9 @@ section{
     text-decoration: underline;
     color: #1D1D1D;
     margin: 10px;
+    @media screen and (min-width: $desktop-width) { 
+        margin-right: 67px;
+    }
 }
 
 .thanks img {
@@ -973,11 +1417,35 @@ section{
 
 .phone-img {
     margin-top: 25px;
+    @media screen and (min-width: $desktop-width) {
+        display: none;
+    }
 }
 
 .team {
     border-top-style: solid;
     border-top-width: 1px;
+}
+
+.team-main-block {
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.employees {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: block;
+        width: 25.7%;
+        p {
+            margin-top: 35px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 115%;
+        }
+    }
 }
 
 .team h2 {
@@ -987,12 +1455,29 @@ section{
     text-transform: uppercase;
     color: #1D1D1D;
     margin: 20px 0 40px 0;
+    @media screen and (min-width: $desktop-width) {
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 115%;
+        margin-bottom: 100px;
+    }
 }
 
 .team > p {
     font-size: 14px;
     line-height: 135%;
     letter-spacing: -0.02em;
+}
+
+.team-header > p {
+    @media screen and (min-width: $desktop-width) {
+        width: 385px;
+        font-size: 16px;
+        line-height: 135%;
+        letter-spacing: -0.02em;
+        margin: 0 0 60px 315px;
+    }
 }
 
 .team-employee p:first-child {
@@ -1016,16 +1501,44 @@ section{
     border-top-width: 1px;
 }
 
+.blog-header-desktop {
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.articles {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: block;
+        width: 25.7%;
+        p {
+            margin-top: 35px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 115%;
+        }
+    }
+}
+
 .header-blog {
     display: flex;
     justify-content: space-between;
     margin: 20px 0 50px 0;
+    @media screen and (min-width: $desktop-width) {
+        width: 74.3%;
+
+    }
 }
 
 .arrow-blog{
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media screen and (min-width: $desktop-width) {
+        margin-top: 35px;
+    }
 }
 
 .arrow-blog p {
@@ -1042,10 +1555,44 @@ section{
     line-height: 115%;
     text-transform: uppercase;
     color: #1D1D1D;
+    @media screen and (min-width: $desktop-width) {
+        margin-top: 30px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 115%;
+    }
+}
+
+.blog-flex {
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.blog-block-mobile {
+    @media screen and (min-width: $desktop-width) {
+        display: none; 
+    }
+}
+
+.blog-block-desktop {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        > div {
+            width: 22.85%;
+        }
+    }
 }
 
 .blog-block {
     margin: 20px 0 0 0;
+    @media screen and (min-width: $desktop-width) { 
+        img {width: 100%;}
+    }
 }
 
 .blog-text-opacity {
@@ -1067,6 +1614,93 @@ section{
 
 .section0{
     padding: 0;
+    @media screen and (min-width: $desktop-width) { 
+        background-color: $color_1;
+    }
+}
+
+.last-block {
+    @media screen and (min-width: $desktop-width) { 
+        display: none;
+    }
+}
+
+.last-block-desktop {
+    display: none;
+    @media screen and (min-width: $desktop-width) { 
+        display: block;
+    }
+}
+
+.last-main-block {
+    padding: 40px 70px 0 71px;
+}
+
+.header-last-desktop {
+    display: flex;
+    flex-direction: row;
+}
+
+.last-logo {
+    display: flex;
+    flex-direction: row;
+    width: 51.51%;
+    img {
+        height: 25px;
+    }
+}
+
+.last-showreel {
+    margin-left: 184px;
+    a {
+        display: flex;
+        flex-direction: row;
+        color: $color_4;
+        img {height: 12px;}
+        margin-top: 5.5px;
+    }
+}
+
+.last-menu-desktop {
+    width: 48.49%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $color_4;
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            margin-right: 35px;
+        }
+    }
+    img {
+        height: 12px;
+    }
+}
+
+.last-context-dektop {
+    display: flex;
+    flex-direction: row;
+    margin-top: 191px;
+    padding-bottom: 130px;
+}
+
+.discuss {
+    width: 51.51%;
+}
+
+.submit-your-application {
+    width: 48.49%;
+    > div {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.width490 {
+    width: 490px;
+    height: 55px;
 }
 
 .text-white {
@@ -1095,7 +1729,13 @@ section{
     text-transform: uppercase;
     color: #898989;
     margin: 15px 0 40px 0;
-
+    @media screen and (min-width: $desktop-width) { 
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 115%;
+        margin-top: 0;
+        margin-bottom: 31px;
+    }
 }
 
 .input-project {
@@ -1105,6 +1745,11 @@ section{
     height: 120px;
     margin-bottom: 18px;
     padding-bottom: 70px;
+    @media screen and (min-width: $desktop-width) { 
+        width: 490px;
+        height: 154px;
+        margin-bottom: 30px;
+    }
 }
 
 .input-project::placeholder {
@@ -1115,6 +1760,9 @@ section{
     width: 348px;
     box-sizing: border-box;
     padding-left: 20px;
+    @media screen and (min-width: $desktop-width) {
+        width: 385px;
+    }
 }
 
 .download {
@@ -1122,6 +1770,9 @@ section{
     flex-direction: row;
     align-items: center;
     margin: 42px 0 90px 0;
+    @media screen and (min-width: $desktop-width) {
+        margin: 32px 0 131px 0;
+    }
 }
 
 .download img {
@@ -1146,6 +1797,9 @@ section{
     flex-direction: row;
     align-items: center;
     opacity: 0.5;
+    @media screen and (min-width: $desktop-width) {
+        color: $color_4;
+    }
 }
 
 .piter img {
@@ -1158,6 +1812,11 @@ section{
     line-height: 135%;
     letter-spacing: -0.04em;
     margin: 45px 70px 30px 15px;
+    @media screen and (min-width: $desktop-width) {
+        width: 35%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .contact-text a {
@@ -1173,11 +1832,27 @@ section{
 .contact-text {
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: $desktop-width) {
+        margin-top: 30px;
+    }
 
+}
+
+.no-footer {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(245, 245, 245, 0.1);
 }
 
 .icon {
   margin: 35px 0 60px 0;  
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 }
 
 .icon img {
@@ -1192,6 +1867,10 @@ section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (min-width: $desktop-width) {
+        width: 51.51%;
+        border-top: none;
+    }
 }
 
 .class p {
@@ -1199,6 +1878,23 @@ section{
     line-height: 15px;
     color: #F7F7F7;
     opacity: 0.5;
+    @media screen and (min-width: $desktop-width) {
+        padding-top: 15px;
+    }
+}
+
+.footer-img {
+    display: flex;
+    flex-direction: row;
+    .politic {
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration-line: underline;
+        color: #F7F7F7;
+        opacity: 0.5;
+        margin-right: 128px;
+        margin-top: 15px;
+    }
 }
 
 .creative-director {
