@@ -81,7 +81,7 @@ body {
 
 section {
   max-width: 1140px;
-  min-width: 370px;
+  min-width: 375px;
   padding: 60px 13px 60px 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -901,7 +901,7 @@ section {
     background-image: url(../img/black-arrow-down.png);
     background-repeat: no-repeat;
     width: 100%;
-    background-position: 563px;
+    background-position: 45%;
     border-top-style: solid;
     border-top-width: 1px;
     border-bottom-style: solid;
