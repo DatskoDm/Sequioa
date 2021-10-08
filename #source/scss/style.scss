@@ -17,6 +17,7 @@ section{
     display: flex;
     flex-direction: column;
     align-content: center;
+    overflow: hidden;
     @media screen and (min-width: $desktop-width) {
         padding: 80px 70px 80px 71px;
         max-width: 1920px;
@@ -398,6 +399,7 @@ section{
         margin-bottom: 30px;
         font-size: 20px;
         line-height: 22px;
+        width: 120px;
     }
 }
 
