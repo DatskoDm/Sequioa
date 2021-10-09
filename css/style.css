@@ -2611,3 +2611,58 @@ section {
 .scroll-box .first-scroll-box:nth-child(4) {
   background-color: #EDA335;
 }
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation-name: show-header;
+          animation-name: show-header;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 23px 14px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  width: 100%;
+}
+@media screen and (min-width: 1366px) {
+  .header-fixed {
+    padding: 0 70px;
+    height: 94px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@-webkit-keyframes show-header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes show-header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}

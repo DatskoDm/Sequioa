@@ -1941,3 +1941,35 @@ section{
 .scroll-box .first-scroll-box:nth-child(4) {
     background-color: #EDA335;
 }
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation-name: show-header;
+    animation-duration: 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 23px 14px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    width: 100%;
+
+	@media screen and (min-width: $desktop-width) {
+        padding: 0 70px;
+        height: 94px;
+        align-items: center;
+    }
+}
+
+@keyframes show-header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
