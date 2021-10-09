@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  width: auto;
+  width: 100%;
   font-family: Inter;
   font-size: 14px;
 }
@@ -2611,6 +2611,7 @@ section {
 .scroll-box .first-scroll-box:nth-child(4) {
   background-color: #EDA335;
 }
+<<<<<<< HEAD
 
 .header-fixed {
   position: fixed;
@@ -2666,3 +2667,5 @@ section {
     top: 0;
   }
 }
+=======
+>>>>>>> aab9d9119d0f2ed468587b747674b83b1fc8fc15
