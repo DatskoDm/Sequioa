@@ -8,7 +8,7 @@
 	<title>SEQUOIA</title>
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="header">
 			<img src="./img/Group28426537.png" alt="sequoia1">
 			<div class="header-desktop-list">
@@ -19,35 +19,49 @@
 					</a>	
 				</div>
 				<ul>
-					<li>Проекты</li>
-					<li>Достижения</li>
-					<li>Услуги</li>
-					<li>Контакты</li>
+					<li>
+						<a class="sub-menu-link" href="#project-nav">Проекты</a>
+					</li>
+					<li>
+						<a class="sub-menu-link" href="#achivments-nav">Достижения</a>
+					</li>
+					<li>
+						<a class="sub-menu-link" href="#sevices-nav">Услуги</a>
+					</li>
+					<li>
+						<a class="sub-menu-link" href="#contacts-nav">Контакты</a>
+					</li>
 				</ul>
 			</div>
-			<div class="menu">
-				<p>menu</p>
-				<img src="./img/Group28426542.png" alt="menu">
+			<div class="header-menu">
+				<a class="menu popup-link" href="#menu-popup" >
+					<p>menu</p>
+					<img src="./img/Group28426542.png" alt="menu">
+				</a>
 			</div>
 		</div>
 	</header>
 	<section>
-		<div class="introduce">
-			<div class="paragrah-introduce">
-				<p>Веб-разработка. Внедрение CRM. Маркетинг. И не только...</p>
+		<div class="introduce-context">
+			<div class="introduce">
+				<div class="paragrah-introduce">
+					<p>Веб-разработка. Внедрение CRM. Маркетинг. И не только...</p>
+				</div>
+				<div class="header-introduce">
+					<h1>Комплексное решение для бизнеса по цене одного сотрудника</h1>
+					<form>
+						<button class="button-client">Стать клиентом</button>
+					</form>
+				</div>
+				<div class="logo_showreel">
+					<img src="./img/blue_logo.png" alt="blue_logo">
+				</div>
 			</div>
-			<div class="header-introduce">
-				<h1>Комплексное решение для бизнеса по цене одного сотрудника</h1>
-				<form>
-					<button class="button-client">Стать клиентом</button>
-				</form>
-			</div>
-			<div class="logo_showreel">
-				<img src="./img/blue_logo.png" alt="blue_logo">
-			</div>
+			<img class="img-mobile" src="../img/Group284272671.png" alt="#">
+			<img class="laptop-introduce img-desktop"  src="../img/Group28427267.png" alt="#">
 		</div>
 	</section>
-	<section>
+	<section id="sevices-nav">
 		<div class="services">
 			<div class="services-context">
 				<div class="services-tariffs">
@@ -144,7 +158,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="project-nav">
 		<div class="project">
 			<div class="project-first-block">
 				<div class="years">
@@ -263,17 +277,16 @@
 					</div>
 				</div>
 				<div class="black-button">
-					<form action="#">
-						<button class="button-download">
-							Загрузить ещё
-							<img src="./img/Vector-wh.png" alt="vector">
-						</button>
-					</form>
+					<button class="button-download">
+						Загрузить ещё
+						<img class="img-mobile" src="../img/Vector-wh.png" alt="vector">
+						<img class="img-desktop" src="../img/black-arrow-down.png" alt="">
+					</button>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="achivments-nav">
 		<div class="achievements">
 			<div class="row">
 				<div class="indicators">
@@ -284,13 +297,6 @@
 					<p class="achievements-description">C 2018 года мы реализовали более 15 проектов.
 						Это цифра может показаться не существенной, но мы не гонимся за количеством. 
 						Каждый наш проект индивидуален и каждым и из них мы можем гордится. </p>
-					<div class="block-line">
-						<img class="line1" src="./img/Line255.png" alt="line1">
-						<img class="line2" src="./img/Line259.png" alt="line2">
-						<img class="line2" src="./img/Line259.png" alt="line2">
-						<img class="line2" src="./img/Line259.png" alt="line2">
-						<img class="line2" src="./img/Line259.png" alt="line2">
-					</div>
 					<div class="achievements4">
 						<div class="achievements-block">
 							<h3>3 года</h3>
@@ -385,25 +391,25 @@
 				</div>
 				<div class="money">
 					<h3>Выберите интересующий тариф:</h3>
-					<div class="row">
-						<form action="#">
-							<button class="basic">
+					<div class="row row-price">
+						<button>
+							<div class="basic">
 								<p class="text-button">Basic</p>
 								<p class="price-button">45.000₽ <sup class="mounth">мес</sup></p>
-							</button>
-						</form>
-						<form action="#">
-							<button class="pro">
+							</div>
+						</button>
+						<button>
+							<div class="pro">
 								<p class="text-button">Pro</p>
 								<p class="price-button">65.000₽ <sup class="mounth">мес</sup></p>
-							</button>
-						</form>
-						<form action="#">
-							<button class="enterprise">
+							</div>
+						</button>
+						<button>
+							<div class="enterprise">
 								<p class="text-button">Enterprise</p>
 								<p class="price-button">120.000₽ <sup class="mounth-black">мес</sup></p>
-							</button>
-						</form>
+							</div>
+						</button>
 					</div>
 				</div>				
 			</div>	
@@ -596,13 +602,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="section0">
+	<section class="section0" id="contacts-nav">
 		<div class="last-block">	
 			<div class="black-background questions">
 				<div class="margin-black">
 					<div class="header header-padding">
 						<img src="./img/white_sequoia(1).png" alt="sequoia3">
-						<div class="menu">
+						<div class="menu popup-link">
 							<p class="text-white">menu</p>
 							<img src="./img/white_sequoia2(2).png" alt="sequoia3">
 						</div>
@@ -663,10 +669,18 @@
 					</div>
 					<div class="last-menu-desktop">
 						<ul>
-							<li>Проекты</li>
-							<li>Достижения</li>
-							<li>Услуги</li>
-							<li>Контакты</li>
+							<li>
+								<a class="sub-menu-link" href="#project-nav">Проекты</a>
+							</li>
+							<li>
+								<a class="sub-menu-link" href="#achivments-nav">Достижения</a>
+							</li>
+							<li>
+								<a class="sub-menu-link" href="#sevices-nav">Услуги</a>
+							</li>
+							<li>
+								<a class="sub-menu-link" href="#contacts-nav">Контакты</a>
+							</li>
 						</ul>
 						<div class="menu">
 							<p>menu</p>
@@ -732,6 +746,60 @@
 			</div>
 		</div>
 	</section>
+	<div id="menu-popup" class="menu-popup">
+		<div class="menu-popup-body">
+			<div class="menu-popup-content">
+				<div class="header-menu-popup">
+					<div class="header-menu-popup-img">
+						<img src="../img/Group28426537.png" alt="#">
+					</div>
+					<div class="plus-application">
+						<p>+</p>
+						<a href="#">Оставить заявку</a>
+					</div>
+					<a class="close-a" href="#header">
+						<img src="../img/img-close.png" alt="img-close">
+					</a>			
+				</div>
+				<div class="menu-popup-ul">
+					<ul>
+						<li>
+							<a class="sub-menu-link" href="#project-nav">Проекты</a>
+						</li>
+						<li>
+							<a class="sub-menu-link" href="#showreel-nav">showreel</a>
+						</li>
+						<li>
+							<a class="sub-menu-link" href="#approach-nav">Подход</a>
+						</li>
+						<li>
+							<a class="sub-menu-link" href="#blog-nav">Блог</a>
+						</li>
+					</ul>
+					<div class="plus-application-mobile">
+						<p>+</p>
+						<a href="#">Оставить заявку</a>
+					</div>
+				</div>
+				<div class="footer-menu-popup">
+					<div class="icon-menu-popup">
+						<a href="https://www.messenger.com/" target="_blank"><img src="./img/icon_black1.png" alt=""></a>
+						<a href="https://web.telegram.org/" target="_blank"><img src="./img/icon_black2.png" alt=""></a>
+						<a href="https://www.messenger.com/" target="_blank"><img src="./img/icon_black3.png" alt=""></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="./img/icon_black4.png" alt=""></a>
+						<a href="https://www.youtube.com/" target="_blank"><img src="./img/icon_black5.png" alt=""></a>	
+					</div>
+					<div class="contacts-menu-popup">
+						<a href="+78122010007" target="_blank">+7 812 201 00 07</a>
+						<a href="https://www.sequoia.agency@gmail.com" target="_blank">Sequoia.Agency@gmail.com</a>
+					</div>
+					<div class="year-menu-popup">
+						<p>2018-2021 ©  Sequoia</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="./js/main.js"></script>
 </body>
 </html>

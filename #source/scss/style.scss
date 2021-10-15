@@ -8,6 +8,7 @@ body {
     width: auto;
     font-family: Inter; 
     font-size: 14px;
+    height: auto;
 }
 
 section{
@@ -22,6 +23,13 @@ section{
         padding: 80px 70px 80px 71px;
         max-width: 1920px;
     }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .header {
@@ -41,6 +49,9 @@ section{
 
 .header img {
     max-height: 13px;
+    @media screen and (min-width: $desktop-width) {
+        max-height: 21px;
+    }
 }
 
 .header-desktop-list {
@@ -72,25 +83,31 @@ section{
 .menu p {
     margin-right: 10px;
     line-height: 0.75;
+    color: $color_1;
+}
+
+.header-menu {
+    position: relative;
 }
 
 .introduce {
-    background-image: url("../img/Group284272671.png");
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    padding-bottom: 200px;
+
 
     @media screen and (min-width: $desktop-width) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 40px;
-        background-image: url("../img/Group28427267.png");
-        background-repeat: no-repeat;
-        background-position: 0 100%;
-        padding-bottom: 660px;
     }
 }
+
+.introduce-context {
+    @media screen and (min-width: $desktop-width) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
 .paragrah-introduce {
     margin-top: 100px;
@@ -643,21 +660,21 @@ section{
     color: rgba(245, 245, 245, 1) ;
     width: 348px;
     height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-left: 13px;
+    }
     @media screen and (min-width: $desktop-width) {
+        width: 100%;
         background-color: $color_4;
         color: $color_1;
-        background-image: url(../img/black-arrow-down.png);
-        background-repeat: no-repeat;
-        width: 100%;
-        background-position: 45%;
         border-top-style: solid;
         border-top-width: 1px;
         border-bottom-style: solid;
         border-bottom-width: 1px;
         border-color: rgba(29, 29, 29, 0.3);
-        img {
-            display: none;
-        }
     }
 }
 
@@ -742,9 +759,25 @@ section{
     margin: 30px 20px 30px 0;
     box-sizing: border-box;
     @media screen and (min-width: $desktop-width) {
-        margin: 50px 0px 30px 20px;
-        width: 190px;
+        position: relative;
+        padding: 70px 0px 30px 20px;
+        width: 17%;
+        border-top-style: solid;
+        border-top-width: 1px;
+        margin: 0;
     }
+    
+}
+
+.achievements-block::before {
+    @media screen and (min-width: $desktop-width) {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        border-left:1px solid;;
+        height: 10%;
+    }   
 }
 
 .achievements-block h3 {
@@ -1019,7 +1052,7 @@ section{
     }
 }
 
-.money form {
+.money button {
     @media screen and (min-width: $desktop-width) {
         width: 280px;
         margin-right: 35px;
@@ -1027,11 +1060,15 @@ section{
     }
 }
 
-.money button {
+.row-price div {
     @media screen and (min-width: $desktop-width) {
         height: 150px;
         flex-direction: column;
         padding: 15px;
+        padding-right: 35px;
+        p {
+            text-align: start;
+        }
     }
 }
 
@@ -1680,6 +1717,9 @@ section{
     img {
         height: 12px;
     }
+    a {
+        color: $color_4;
+    }
 }
 
 .last-context-dektop {
@@ -1931,6 +1971,11 @@ section{
     }
 }
 
+.sub-menu-link:hover {
+    color: #2E4ADF;
+    font-weight: 600;
+}
+
 .scroll-box .first-scroll-box:nth-child(2) {
     background-color: #9E00FF;
 }
@@ -1942,34 +1987,196 @@ section{
     background-color: #EDA335;
 }
 
-.header-fixed {
+.menu-popup {
     position: fixed;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
-    animation-name: show-header;
-    animation-duration: 1s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: all 1s ease 0s;
+}
+
+.menu-popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-popup.active .menu-popup-content {
+    transform:perspective(600px) translate(0px, 0px) rotateX(0deg);
+    opacity: 1;
+}
+
+.menu-popup-body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-popup-content {
+    display: flex;
+    flex-direction: column;
+    background-color: $color_4;
+    color: $color_1;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.header-menu-popup {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 23px 14px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    width: 100%;
-
-	@media screen and (min-width: $desktop-width) {
-        padding: 0 70px;
+    align-items: center;
+    height: 64px;
+    padding: 20px 20px 20px 14px;
+    @media screen and (min-width: $desktop-width) {
         height: 94px;
-        align-items: center;
+        padding: 30px 70px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-color: rgba(29, 29, 29, 0.3);
+    }  
+}
+
+.header-menu-popup-img {
+    img {height: 18px;}
+    @media screen and (min-width: $desktop-width) {
+        width: 32%;
+        img {
+            height: 25px;
+        }   
     }
 }
 
-@keyframes show-header {
-    0% {
-        opacity: 0;
-        top: -70px;
+.plus-application {
+    display: none;
+    @media screen and (min-width: $desktop-width) { 
+        display: flex;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        a {
+            color: $color_1;
+            text-decoration: underline;
+            margin-left: 6px;
+        }
     }
-    100% {
-        opacity: 1;
-        top: 0;
+}
+
+.close-a {
+    margin-right: 0;
+    margin-left: auto;
+    img {
+        height: 22.62px;
+    }
+    @media screen and (min-width: $desktop-width) { 
+        img {
+            height: 29.7px;
+        }
+    }
+}
+
+.menu-popup-ul {
+    padding-left: 14px;
+    margin: 100px auto auto 0px;
+    flex: 1 1 auto;
+    li {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 115%;
+        text-transform: uppercase;
+        a{color: $color_1;}
+        margin-bottom: 15px;
+    }
+    @media screen and (min-width: $desktop-width) {        
+        width: 66.5%;
+        margin: 110px 0 50px auto;
+        li {
+            font-weight: bold;
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+    }
+    
+}
+
+.plus-application-mobile {
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    a {
+        color: $color_1;
+        text-decoration: underline;
+        margin-left: 6px;
+    }
+    @media screen and (min-width: $desktop-width) { 
+        display: none;
+    }
+}
+
+.footer-menu-popup {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 103px 14px;
+    position: relative;
+    .icon-menu-popup {
+        position: absolute; 
+        margin-bottom: 32px;
+        bottom: 0%;
+        a {color: $color_1;}
+        img {
+            margin-right: 15px;
+        }
+    }
+    .contacts-menu-popup {
+        display: flex;
+        flex-direction: column;
+        a {
+            font-size: 16px;
+            line-height: 135%;
+            letter-spacing: -0.02em;
+            color: #1d1d1d;        
+        }
+    }
+    @media screen and (min-width: $desktop-width) { 
+        flex-direction: row;
+        padding: 0 70px 0 70px;
+        .icon-menu-popup {
+            position: static;
+            width: 32%;
+            a {color: $color_1;}
+            opacity: 0.4;
+        }
+        .contacts-menu-popup {
+            opacity: 0.4;
+        }
+        .year-menu-popup {
+            margin-right: 0;
+            margin-left: auto;
+            p {
+                opacity: 0.4;
+            }
+        }
+    }
+    
+}
+
+.img-mobile {
+    display: block;
+    @media screen and (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.img-desktop {
+    display: none;
+    @media screen and (min-width: $desktop-width) {
+        display: block;
     }
 }
