@@ -18,7 +18,7 @@ section{
     display: flex;
     flex-direction: column;
     align-content: center;
-    overflow: hidden;
+    // overflow: hidden;
     @media screen and (min-width: $desktop-width) {
         padding: 80px 70px 80px 71px;
         max-width: 1920px;
@@ -149,9 +149,9 @@ header {
 .button-client {
     background: rgba(46, 74, 223, 1);
     border: none;
-    color: white;
     padding: 15px 39px;
     margin: 27px 0 70px 0;
+    color: white;
 }
 
 .introduce-img {
@@ -2153,15 +2153,20 @@ header {
 }
 
 .sequoia-request {
-    // position: fixed;
+    position: fixed;
     width: 100vw;
     height: 100vh;
-    // top: 0;
-    // left: 0;
-    // opacity: 0;
-    // visibility: hidden;
-    // z-index: 2;
-    // transition: all 1s ease 0s;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: all 1s ease 0s;
+}
+
+.sequoia-request.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .sequoia-request-content {
@@ -2171,6 +2176,9 @@ header {
     color: $color_1;
     width: 100vw;
     height: 100vh;
+    .header-menu-popup{
+        justify-content: space-between;
+    }
 }
 
 .sequoia-request-body {
@@ -2182,8 +2190,13 @@ header {
 
 .input-block-request {
     padding: 0 14px;
-    margin-top: 80px;
+    margin-top: 50px;
     flex: 1 1 auto;
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop-width) {        
+        width: 66.5%;
+        margin: 100px 0 50px auto;
+    }
 }
 
 .input-block-request-h3 {
@@ -2224,4 +2237,17 @@ header {
     color: #1D1D1D;
     opacity: 0.5;
     margin-top: 20px;
+    @media screen and (min-width: $desktop-width)  {
+        width: 284px;
+        height: 30px;
+        margin-left: 35px;
+    }
+}
+
+.input-button-with-text {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $desktop-width) {
+        flex-direction: row;
+    }
 }

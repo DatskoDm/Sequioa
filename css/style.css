@@ -93,7 +93,6 @@ section {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  overflow: hidden;
 }
 @media screen and (min-width: 1366px) {
   section {
@@ -281,9 +280,9 @@ header {
 .button-client {
   background: #2e4adf;
   border: none;
-  color: white;
   padding: 15px 39px;
   margin: 27px 0 70px 0;
+  color: white;
 }
 
 .introduce-img {
@@ -2894,8 +2893,21 @@ header {
 }
 
 .sequoia-request {
+  position: fixed;
   width: 100vw;
   height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 2;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+.sequoia-request.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .sequoia-request-content {
@@ -2910,6 +2922,11 @@ header {
   color: #1D1D1D;
   width: 100vw;
   height: 100vh;
+}
+.sequoia-request-content .header-menu-popup {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .sequoia-request-body {
@@ -2927,10 +2944,17 @@ header {
 
 .input-block-request {
   padding: 0 14px;
-  margin-top: 80px;
+  margin-top: 50px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1366px) {
+  .input-block-request {
+    width: 66.5%;
+    margin: 100px 0 50px auto;
+  }
 }
 
 .input-block-request-h3 {
@@ -2980,4 +3004,29 @@ header {
   color: #1D1D1D;
   opacity: 0.5;
   margin-top: 20px;
+}
+@media screen and (min-width: 1366px) {
+  .input-request-text {
+    width: 284px;
+    height: 30px;
+    margin-left: 35px;
+  }
+}
+
+.input-button-with-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 1366px) {
+  .input-button-with-text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }

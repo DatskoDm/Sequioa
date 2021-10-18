@@ -1,3 +1,21 @@
+const clientLink = document.querySelector('.button-client');
+clientLink.addEventListener('click', function () {
+    const linkForm = clientLink.getAttribute('href').replace('#', '');
+    const curentLinkForm = document.getElementById(linkForm);
+    openLink(curentLinkForm);
+});
+
+function openLink(curentLinkForm) {
+    curentLinkForm.classList.add('active');
+}
+
+const closeClient = document.querySelector('.close-client');
+
+closeClient.addEventListener('click', function () {
+    const clientActive = document.querySelector('.sequoia-request.active')
+    clientActive.classList.remove('active');
+});
+
 const popupLinks = document.querySelectorAll('.popup-link'); 
 const body = document.querySelector('body'); 
 const lockPadding = document.querySelectorAll('.lock-padding'); 
@@ -54,7 +72,7 @@ function popupClose(popupActive, doUnlock = true) {
         }
     }
 }
-const lockPaddingValue = window.innerWidth - document.querySelector('section').offsetWidth + 'px';
+const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
 
 function bodyUnlock() {
     setTimeout(function () {
